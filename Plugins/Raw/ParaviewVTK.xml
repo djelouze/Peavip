@@ -554,7 +554,9 @@
       <!-- End ImageSobel3D -->
       
       <!-- ================================================================== -->
-      <SourceProxy name="Spline" class="vtkSplineFilter" label="Spline">
+      <SourceProxy name="SplineFilter"
+                   class="vtkSplineFilter" 
+                   label="Spline Filter">
          <Documentation
                        long_help="Resample the PolyData lines in a spline fashion."
                        short_help="vtkSplineFilter filter.">
