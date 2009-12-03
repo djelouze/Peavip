@@ -1,0 +1,12 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="sources">
+      <SourceProxy name="PlatonicSolidSource"
+                   class="vtkPlatonicSolidSource"
+                  label=""
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation> 
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

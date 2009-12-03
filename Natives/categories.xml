@@ -1,0 +1,14 @@
+<ParaViewFilters>
+   <Category name="ImageFilters" menu_label="&amp;Image Filters">
+      <Filter name="" />
+      <Filter name="" />
+      <Filter name="" />
+      <Filter name="" />
+      <Filter name="" />
+      <Filter name="" />
+      <Filter name="" />
+   </Category>
+   <Category name="PolyDataFilters" menu_label="&amp;PolyData Filters">
+      <Filter name="" />
+   </Category>
+</ParaViewFilters>
