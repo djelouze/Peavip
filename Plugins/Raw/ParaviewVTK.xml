@@ -552,6 +552,37 @@
          </IntVectorProperty>
       </SourceProxy>
       <!-- End ImageSobel3D -->
+ 
+      <!-- ================================================================== -->
+      <SourceProxy name="ImageFFT" class="vtkImageFFT" label="Image FFT">
+         <Documentation
+                       long_help="Compute the FFt of an image."
+                       short_help="vtkImageFFT filter">
+         </Documentation>
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+         </InputProperty>
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+      <!-- End ImageFFT -->
       
       <!-- ================================================================== -->
       <SourceProxy name="SplineFilter"
