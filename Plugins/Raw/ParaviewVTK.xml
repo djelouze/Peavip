@@ -1004,7 +1004,6 @@
                <DataType value="vtkImageData"/>
             </DataTypeDomain>
          </InputProperty>
-      </SourceProxy>
       <IntVectorProperty
                         name="ReleaseDataFlag"
                         command="SetReleaseDataFlag"
@@ -1015,7 +1014,9 @@
          <Documentation>
             
          </Documentation>
-         </IntVectorProperty>               <!-- End ImageMagnitude -->
+         </IntVectorProperty>
+      </SourceProxy>
+     <!-- End ImageMagnitude -->
 
      <!-- ================================================================== -->
      <SourceProxy name="ImageDivergence" class="vtkImageDivergence" label="Image Divergence">
