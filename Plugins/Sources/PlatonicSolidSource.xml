@@ -1,0 +1,36 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="sources">
+      <SourceProxy name="PlatonicSolidSource"
+                   class="vtkPlatonicSolidSource"
+                  label="Platonic Solid Source">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <Documentation
+                       long_help="Create a platonic solid (e.g., cube, 
+                       icosahedron, etc.)"
+                       short_help="Create a platonic solid">
+            Generates one of the first fifth platonic solid as a vtkPolyData -
+            Tetrahedron, Cube, Octahedron, Icosahedron and Dodecahedron
+         </Documentation>
+         <IntVectorProperty
+                           name="SolidType"
+                           command="SetSolidType"
+                           number_of_elements="1"
+                           default_values="3">
+            
+            <EnumerationDomain name="enum">
+               <Entry value="0" text="Tetrahedron"/>
+               <Entry value="1" text="Cube"/>
+               <Entry value="2" text="Octahedron"/>
+               <Entry value="3" text="Icosahedron"/>
+               <Entry value="4" text="Dodecahedron"/>
+            </EnumerationDomain>
+            <Documentation>
+               This property specifies the type of the platonic solid.
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

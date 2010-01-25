@@ -1,0 +1,226 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageReslice"
+                   class="vtkImageReslice"
+                  label="Image Reslice">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+        <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            
+            <Documentation>
+               
+            </Documentation>
+         </InputProperty>
+         
+         <DoubleVectorProperty
+                              name="ResliceAxesDirectionCosines"
+                              command="SetResliceAxesDirectionCosines"
+                              number_of_elements="9"
+                              default_values="1 0 0 0 1 0 0 0 1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+          <DoubleVectorProperty
+                              name="ResliceAxesOrigin"
+                              command="SetResliceAxesOrigin"
+                              number_of_elements="3"
+                              default_values="0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+         
+          <IntVectorProperty
+                              name="TransformInputSampling"
+                              command="SetTransformInputSampling"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+
+          <IntVectorProperty
+                              name="AutoCropOutput"
+                              command="SetAutoCropOutput"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+                 
+          <IntVectorProperty
+                              name="Wrap"
+                              command="SetWrap"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+         
+          <IntVectorProperty
+                              name="Mirror"
+                              command="SetMirror"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+         
+          <IntVectorProperty
+                              name="Border"
+                              command="SetBorder"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+         
+           <IntVectorProperty
+                              name="InterpolationMode"
+                              command="SetInterpolationMode"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <EnumerationDomain name="enum">
+               <Entry value="0" text="NearestNeighbor"/>
+               <Entry value="1" text="Linear"/>
+               <Entry value="2" text="Cubic"/>
+            </EnumerationDomain>
+
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+
+          <IntVectorProperty
+                              name="Optimization"
+                              command="SetOptimization"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+
+          <DoubleVectorProperty
+                              name="BackgroundColor"
+                              command="SetBackgroundColor"
+                              number_of_elements="4"
+                              default_values="0 0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+                  
+          <DoubleVectorProperty
+                              name="BackgroundLevel"
+                              command="SetBackgroundLevel"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+
+
+         <DoubleVectorProperty
+                              name="OutputSpacing"
+                              command="SetOutputSpacing"
+                              number_of_elements="3"
+                              default_values="1 1 1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+ 
+          <DoubleVectorProperty
+                              name="OutputOrigin"
+                              command="SetOutputOrigin"
+                              number_of_elements="3"
+                              default_values="0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>        
+         
+         <IntVectorProperty
+                              name="OutputExtent"
+                              command="SetOutputExtent"
+                              number_of_elements="6"
+                              default_values="0 1 0 1 0 1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>        
+
+         <IntVectorProperty
+                              name="OutputDimensionality"
+                              command="SetOutputDimensionality"
+                              number_of_elements="1"
+                              default_values="2"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+         <IntVectorProperty
+                              name="Interpolate"
+                              command="SetInterpolate"
+                              number_of_elements="1"
+                              default_values="1"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

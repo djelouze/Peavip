@@ -1,0 +1,63 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="sources">
+      <SourceProxy name="ImageGaussianSource"
+                   class="vtkImageGaussianSource"
+                  label="Image Gaussian Source">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <IntVectorProperty
+                           name="WholeExtent"
+                           label="WholeExtent"
+                           number_of_elements="6"
+                           command="SetWholeExtent"
+                           default_values="0 127 0 127 0 127" >
+            <Documentation>
+            </Documentation>
+         </IntVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="Center"
+                              label="Center"
+                              number_of_elements="3"
+                              command="SetCenter"
+                              default_values="63 63 63" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="Maximum"
+                              label="Maximum"
+                              number_of_elements="1"
+                              command="SetMaximum"
+                              default_values="1" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="StandardDeviation"
+                              label="StandardDeviation"
+                              number_of_elements="1"
+                              command="SetStandardDeviation"
+                              default_values="3" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty> 
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

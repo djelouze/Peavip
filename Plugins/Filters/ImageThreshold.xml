@@ -1,0 +1,123 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageThreshold"
+                   class="vtkImageThreshold"
+                  label="Image Threshold">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+       <InputProperty
+          name="Input"
+          command="SetInputConnection">
+         <ProxyGroupDomain name="groups">
+           <Group name="sources"/>
+           <Group name="filters"/>
+         </ProxyGroupDomain>
+         <DataTypeDomain name="input_type">
+           <DataType value="vtkImageData"/>
+         </DataTypeDomain>
+         <InputArrayDomain name="input_array" number_of_components="1">
+           <RequiredProperties>
+             <Property name="SelectInputScalars"
+                       function="FieldDataSelection"/>
+           </RequiredProperties>
+         </InputArrayDomain>
+         <Documentation>
+           This property specifies the input to the Threshold filter.
+         </Documentation>
+       </InputProperty>
+
+       <StringVectorProperty
+          name="SelectInputScalars"
+          command="SetInputArrayToProcess"
+          number_of_elements="5"
+          element_types="0 0 0 0 2"
+          label="Scalars">
+         <ArrayListDomain name="array_list"
+                          attribute_type="Scalars">
+           <RequiredProperties>
+             <Property name="Input" function="Input"/>
+           </RequiredProperties>
+         </ArrayListDomain>
+         <FieldDataDomain name="field_list">
+           <RequiredProperties>
+             <Property name="Input" function="Input"/>
+           </RequiredProperties>
+         </FieldDataDomain>
+         <Documentation>
+           The value of this property contains the name of the scalar array from which to perform thresholding.
+         </Documentation>
+       </StringVectorProperty>
+
+       <DoubleVectorProperty
+          name="ThresholdBetween"
+          command="ThresholdBetween"
+          number_of_elements="2"
+          default_values="0 0"
+          label="Threshold Range">
+         <ArrayRangeDomain name="range">
+           <RequiredProperties>
+             <Property name="Input" function="Input"/>
+             <Property name="SelectInputScalars" function="ArraySelection"/>
+           </RequiredProperties>
+         </ArrayRangeDomain>
+         <Documentation>
+           The values of this property specify the upper and lower bounds of the thresholding operation.
+         </Documentation>
+       </DoubleVectorProperty>
+
+       <IntVectorProperty
+         name="ReplaceIn"
+         command="SetReplaceIn"
+         number_of_elements="1"
+         default_values="1">
+         <BooleanDomain name="boolean"/>
+       </IntVectorProperty>
+       <DoubleVectorProperty
+         name="InValue"
+         command="SetInValue"
+         number_of_elements="1"
+         default_values="1">
+
+       </DoubleVectorProperty>
+       <IntVectorProperty
+         name="ReplaceOut"
+         command="SetReplaceOut"
+         number_of_elements="1"
+         default_values="1">
+         <BooleanDomain name="boolean"/>
+       </IntVectorProperty>
+       <DoubleVectorProperty
+         name="OutValue"
+         command="SetOutValue"
+         number_of_elements="1"
+         default_values="0">
+       </DoubleVectorProperty>
+
+       <IntVectorProperty
+         name="OutputScalarType"
+         command="SetOutputScalarType"
+         number_of_elements="1"
+         default_values="7">
+         <EnumerationDomain name="enum">
+           <Entry value="10" text="Float"/>
+           <Entry value="11" text="Double"/>
+           <Entry value="6" text="Int"/>
+           <Entry value="7" text="UnsignedInt"/>
+           <Entry value="8" text="Long"/>
+           <Entry value="9" text="UnsignedLong"/>
+           <Entry value="6" text="Short"/>
+           <Entry value="5" text="UnsignedShort"/>
+           <Entry value="3" text="UnsignedChar"/>
+           <Entry value="2" text="Char"/>
+         </EnumerationDomain>
+       </IntVectorProperty>
+
+       <Hints>
+         <Visibility replace_input="2" />
+       </Hints>
+       <!-- End Threshold -->
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

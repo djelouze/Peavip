@@ -1,0 +1,107 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageMathematics"
+                   class="vtkImageMathematics"
+                  label="Image Mathematics">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input1"
+                       command="SetInputConnection"
+                       port_index="0">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            <Documentation>
+               Set the input to the Image Mathematics filter.
+            </Documentation>
+         </InputProperty>
+         <InputProperty
+                       name="Input2"
+                       command="SetInputConnection"
+                       port_index="1"
+                       is_optional="1">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            <Documentation>
+               Set the input to the Image Mathematics filter.
+            </Documentation>
+         </InputProperty>
+         
+         <IntVectorProperty
+                           name="Operation"
+                           command="SetOperation"
+                           number_of_elements="1"
+                           default_values="0">
+            
+            <EnumerationDomain name="enum">
+               <Entry value="0" text="Add"/>
+               <Entry value="1" text="Substract"/>
+               <Entry value="2" text="Multiply"/>
+               <Entry value="3" text="Divide"/>
+               <Entry value="4" text="Invert"/>
+               <Entry value="5" text="Sin"/>
+               <Entry value="6" text="Cos"/>
+               <Entry value="7" text="Exp"/>
+               <Entry value="8" text="Log"/>
+               <Entry value="9" text="Abs"/>
+               <Entry value="10" text="Sqr"/>
+               <Entry value="11" text="Sqrt"/>
+               <Entry value="12" text="Min"/>
+               <Entry value="13" text="Max"/>
+               <Entry value="14" text="Atan"/>
+               <Entry value="15" text="Atan2"/>
+               <Entry value="16" text="Multiply by k"/>
+               <Entry value="17" text="Add c"/>
+               <Entry value="18" text="Conjugate"/>
+               <Entry value="19" text="Complex multiply"/>
+               <Entry value="20" text="Replace by k"/>
+            </EnumerationDomain>
+         </IntVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="ConstantK"
+                              command="SetConstantK"
+                              number_of_elements="1"
+                              default_values="1">
+         </DoubleVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="ConstantC"
+                              command="SetConstantC"
+                              number_of_elements="1"
+                              default_values="0">
+         </DoubleVectorProperty>
+         
+         <IntVectorProperty
+                           name="DivideByZeroToC"
+                           command="SetDivideByZeroToC"
+                           number_of_elements="1"
+                           default_values="1">
+            <BooleanDomain name="boolean"/>
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
