@@ -1,0 +1,16 @@
+----------------
+Todo: Comment the filters/sources
+Desc: The ParaView XML description of a VTK proxy has <Documentation> fields 
+      for each ProxyProperty. This has to filled.
+----------------
+Todo: Check the behaviour of VTK filters
+Desc: It seems that some filters/sources have weird behaviour. For instance,
+      vtkImageGaussianSource output cannot be viewed unless it is passed through
+      a vtkImageMagnitude filter (because PointData name is not set). Check and
+      list these bugs.
+----------------
+Todo: Set a category XML descrition 
+Desc: Loading Peavip plugins will result in a lot of filters in the alphabetical
+      list. Categorizing the filters will add clarity
+---------------
+

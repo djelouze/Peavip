@@ -5,15 +5,14 @@ Peavip-3.7
 ParaView plugin that exposes VTK Algorithms in ParaView GUI.
 
 ----------------------------
-Current release:
-* NaN
-----------------------------
-----------------------------
 Current development version:
 * targets ParaView-3.7
-* no options: all filters described in Plugins/Raw/ParaviewVTK.xml are exposed
 * PoC/WiP version
+* All filters/sources are described separately in ./Plugins/Filters
+  or ./Plugins/Sources and they are all compiled in PeavipFilters 
+  and PeavipSources
 
+----------------------------
 How to use:
 (1) Cmake (configure, generate, etc.)
 (2) Compile
