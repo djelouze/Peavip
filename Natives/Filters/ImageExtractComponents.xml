@@ -1,0 +1,68 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageExtractComponents"
+                   class="vtkImageExtractComponents"
+                  label="Image Extract Components">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation> 
+       <InputProperty
+                     name="Input"
+                     command="SetInputConnection">
+         <ProxyGroupDomain name="groups">
+           <Group name="sources"/>
+           <Group name="filters"/>
+         </ProxyGroupDomain>
+         <DataTypeDomain name="input_type">
+           <DataType value="vtkDataSet"/>
+         </DataTypeDomain>
+       </InputProperty>
+
+       <IntVectorProperty
+                         name="Component1"
+                         label="Component"
+                         command="SetComponents"
+                         number_of_elements="1"
+                         animateable="1"
+                         default_values="0" >
+         <Documentation>
+           Choose the component to extract.
+         </Documentation>
+       </IntVectorProperty>
+       <IntVectorProperty
+                         name="Components2"
+                         label="Components"
+                         command="SetComponents"
+                         number_of_elements="2"
+                         animateable="1"
+                         default_values="0 1" >
+         <Documentation>
+           Choose the components to extract.
+         </Documentation>
+       </IntVectorProperty>
+       <IntVectorProperty
+                         name="Components3"
+                         label="Components"
+                         command="SetComponents"
+                         number_of_elements="3"
+                         animateable="1"
+                         default_values="0 1 2" >
+         <Documentation>
+           Choose the components to extract.
+         </Documentation>
+       </IntVectorProperty>
+       <IntVectorProperty
+                         name="ReleaseDataFlag"
+                         command="SetReleaseDataFlag"
+                         number_of_elements="1"
+                         default_values="0"
+                         animateable="0">
+          <BooleanDomain name="boolean"/>
+          <Documentation>
+             
+          </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

@@ -1,0 +1,48 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="SplineFilter"
+                   class="vtkSplineFilter"
+                  label="Spline Filter">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkPolyData"/>
+            </DataTypeDomain>
+         </InputProperty>
+         
+         <IntVectorProperty
+                           name="Subdivide"
+                           command="SetSubdivide"
+                           number_of_elements="1"
+                           default_values="1">
+            
+            <EnumerationDomain name="enum">
+               <Entry value="0" text="Specified"/>
+               <Entry value="1" text="Length"/>
+            </EnumerationDomain>
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="NumberOfSubdivisions"
+                           command="SetNumberOfSubdivisions"
+                           number_of_elements="1"
+                           default_values="5">
+         </IntVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="Length"
+                              command="SetLength"
+                              number_of_elements="1"
+                              default_values="1">
+         </DoubleVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

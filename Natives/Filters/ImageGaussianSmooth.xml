@@ -1,0 +1,55 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageGaussianSmooth"
+                   class="vtkImageGaussianSmooth"
+                  label="Image Gaussian Smooth">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+         </InputProperty>
+         <DoubleVectorProperty 
+                               name="StandardDeviation"
+                               command="SetStandardDeviation"
+                               number_of_elements="1"
+                               default_values="1"
+                               >
+         </DoubleVectorProperty>
+         <DoubleVectorProperty 
+                               name="RadiusFactor"
+                               command="SetRadiusFactor"
+                               number_of_elements="1"
+                               default_values="1"
+                               >
+         </DoubleVectorProperty>
+         <IntVectorProperty 
+                            name="Dimensionality"
+                            command="SetDimensionality"
+                            number_of_elements="1"
+                            default_values="3"
+                            >
+         </IntVectorProperty>       
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
