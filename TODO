@@ -1,4 +1,7 @@
 ----------------
+Todo: Add the GNU-GPL header to files
+Desc:
+----------------
 Todo: Comment the filters/sources
 Desc: The ParaView XML description of a VTK proxy has <Documentation> fields 
       for each ProxyProperty. This has to filled.
