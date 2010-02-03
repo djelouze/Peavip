@@ -3,7 +3,7 @@
       <SourceProxy name="ImageStencil"
                    class="vtkImageStencil"
                   label="Image Stencil">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

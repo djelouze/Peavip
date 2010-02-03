@@ -3,7 +3,7 @@
       <SourceProxy name="ImageThreshold"
                    class="vtkImageThreshold"
                   label="Image Threshold">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

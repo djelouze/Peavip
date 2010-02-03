@@ -3,7 +3,7 @@
       <SourceProxy name="ImageFlip"
                    class="vtkImageFlip"
                   label="Image Flip">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation> 

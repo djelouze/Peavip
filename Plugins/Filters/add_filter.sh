@@ -3,7 +3,7 @@ echo "<ServerManagerConfiguration>
       <SourceProxy name=\"$1\"
                    class=\"vtk$1\"
                   label=\"\">
-         <Documentation>
+         <Documentation
                       long_help=\"\" 
                       short_help=\"\"> 
          </Documentation> 

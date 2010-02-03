@@ -3,7 +3,7 @@
       <SourceProxy name="ImageReslice"
                    class="vtkImageReslice"
                   label="Image Reslice">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

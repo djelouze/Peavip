@@ -3,7 +3,7 @@
       <SourceProxy name="ImageMagnitude"
                    class="vtkImageMagnitude"
                   label="Image Magnitude">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

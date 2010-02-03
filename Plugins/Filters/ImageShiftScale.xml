@@ -3,7 +3,7 @@
       <SourceProxy name="ImageShiftScale"
                    class="vtkImageShiftScale"
                   label="Image Shift/Scale">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

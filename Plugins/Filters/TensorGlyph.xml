@@ -3,7 +3,7 @@
       <SourceProxy name="TensorGlyph"
                    class="vtkTensorGlyph"
                   label="Glyph (Tensor)">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

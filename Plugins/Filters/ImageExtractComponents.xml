@@ -3,7 +3,7 @@
       <SourceProxy name="ImageExtractComponents"
                    class="vtkImageExtractComponents"
                   label="Image Extract Components">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation> 

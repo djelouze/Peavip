@@ -3,7 +3,7 @@
       <SourceProxy name="ImageMathematics"
                    class="vtkImageMathematics"
                   label="Image Mathematics">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

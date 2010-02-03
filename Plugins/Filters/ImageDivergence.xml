@@ -3,7 +3,7 @@
       <SourceProxy name="ImageDivergence"
                    class="vtkImageDivergence"
                   label="Image Divergence">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>
