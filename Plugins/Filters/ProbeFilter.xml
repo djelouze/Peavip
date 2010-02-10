@@ -3,7 +3,7 @@
       <SourceProxy name="ProbeFilter"
                    class="vtkProbeFilter"
                   label="Probe Filter">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

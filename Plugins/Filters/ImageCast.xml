@@ -3,7 +3,7 @@
       <SourceProxy name="ImageCast"
                    class="vtkImageCast"
                   label="Image Cast">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

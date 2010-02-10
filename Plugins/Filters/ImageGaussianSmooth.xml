@@ -3,7 +3,7 @@
       <SourceProxy name="ImageGaussianSmooth"
                    class="vtkImageGaussianSmooth"
                   label="Image Gaussian Smooth">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

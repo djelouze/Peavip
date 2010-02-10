@@ -3,7 +3,7 @@
       <SourceProxy name="ImageResample"
                    class="vtkImageResample"
                   label="Image Resample">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation> 

@@ -3,7 +3,7 @@
       <SourceProxy name="SplineFilter"
                    class="vtkSplineFilter"
                   label="Spline Filter">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>

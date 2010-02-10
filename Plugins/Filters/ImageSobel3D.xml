@@ -3,7 +3,7 @@
       <SourceProxy name="ImageSobel3D"
                    class="vtkImageSobel3D"
                   label="Image Sobel 3D">
-         <Documentation>
+         <Documentation
                       long_help="" 
                       short_help=""> 
          </Documentation>
