@@ -2,6 +2,7 @@
 # List xml description of filters
 SET( FILTERS_XML 
 ./Filters/ImageCast.xml
+./Filters/ImageChangeInformation.xml
 ./Filters/ImageDivergence.xml
 ./Filters/ImageExtractComponents.xml
 ./Filters/ImageFFT.xml

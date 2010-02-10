@@ -1,0 +1,117 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageChangeInformation"
+                   class="vtkImageChangeInformation"
+                  label="Image Change Information">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation> 
+        <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            
+            <Documentation>
+               
+            </Documentation>
+         </InputProperty>
+
+         <IntVectorProperty
+                              name="OutputExtentStart"
+                              command="SetOutputExtentStart"
+                              number_of_elements="3"
+                              default_values="0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+
+         <DoubleVectorProperty
+                              name="OutputSpacing"
+                              command="SetOutputSpacing"
+                              number_of_elements="3"
+                              default_values="1 1 1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+
+          <DoubleVectorProperty
+                              name="OutputOrigin"
+                              command="SetOutputOrigin"
+                              number_of_elements="3"
+                              default_values="0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+
+         <IntVectorProperty
+                              name="CenterImage"
+                              command="SetCenterImage"
+                              number_of_elements="1"
+                              default_values="0"
+                              animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+
+         <IntVectorProperty
+                              name="ExtentTranslation"
+                              command="SetExtentTranslation"
+                              number_of_elements="3"
+                              default_values="0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+
+         <DoubleVectorProperty
+                              name="SpacingScale"
+                              command="SetSpacingScale"
+                              number_of_elements="3"
+                              default_values="1 1 1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+
+          <DoubleVectorProperty
+                              name="OriginTranslation"
+                              command="SetOriginTranslation"
+                              number_of_elements="3"
+                              default_values="0 0 0"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+
+          <DoubleVectorProperty
+                              name="OriginScale"
+                              command="SetOriginScale"
+                              number_of_elements="3"
+                              default_values="1 1 1"
+                              animateable="0">
+            <Documentation>
+               
+            </Documentation>
+         </DoubleVectorProperty>
+
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
