@@ -6,6 +6,7 @@ SET( FILTERS_XML
 ./Filters/ImageDivergence.xml
 ./Filters/ImageExtractComponents.xml
 ./Filters/ImageFFT.xml
+./Filters/ImageFourierCenter.xml
 ./Filters/ImageRFFT.xml
 ./Filters/ImageFlip.xml
 ./Filters/ImageGaussianSmooth.xml
