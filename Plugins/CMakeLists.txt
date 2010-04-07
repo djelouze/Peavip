@@ -12,6 +12,7 @@ SET( FILTERS_XML
 ./Filters/ImageGaussianSmooth.xml
 ./Filters/ImageMagnitude.xml
 ./Filters/ImageMathematics.xml
+./Filters/ImageNormalize.xml
 ./Filters/ImageResample.xml
 ./Filters/ImageReslice.xml
 ./Filters/ImageShiftScale.xml
