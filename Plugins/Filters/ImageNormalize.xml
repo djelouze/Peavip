@@ -1,0 +1,34 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageNormalize"
+                   class="vtkImageNormalize"
+                  label="Image Magnitude">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+         </InputProperty>
+         <IntVectorProperty
+                        name="ReleaseDataFlag"
+                        command="SetReleaseDataFlag"
+                        number_of_elements="1"
+                        default_values="0"
+                        animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+            
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
