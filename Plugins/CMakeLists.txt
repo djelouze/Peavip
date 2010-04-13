@@ -25,8 +25,11 @@ SET( FILTERS_XML
 )
 
 # Create target that will contain all the listed VTK filter
-ADD_PARAVIEW_PLUGIN(PeavipFilters "1.0"
-  SERVER_MANAGER_XML ${FILTERS_XML}  )
+ADD_PARAVIEW_PLUGIN(
+  PeavipFilters "1.0"
+  SERVER_MANAGER_XML ${FILTERS_XML}  
+  GUI_RESOURCE_FILES PeavipFilterMenu.xml
+)
 
 # List xml descriptions of VTK sources
 SET( SOURCES_XML 

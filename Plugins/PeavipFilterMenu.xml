@@ -1,0 +1,14 @@
+<ParaViewFilters>
+  <Category name="Image" menu_label="&amp;Image">
+    <Filter name="ImageMagnitude" />
+  </Category>
+  <Category name="PolyData" menu_label="&amp;PolyData">
+   <Filter name="TubeFilter"/>
+   <Filter name="CleanPolyData"/>
+   <Filter name="SplineFilter"/>
+  </Category>
+  <Category name="Hybrid" menu_label="&amp;Hybrid">
+    <Filter name="StreamTracer" />
+    <Filter name="ArbitrarySourceStreamTracer" />
+  </Category>
+</ParaViewFilters>
