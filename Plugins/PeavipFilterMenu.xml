@@ -1,6 +1,23 @@
 <ParaViewFilters>
   <Category name="Image" menu_label="&amp;Image">
+    <Filter name="ImageCast" />
+    <Filter name="ImageChangeInformation"/>
+    <Filter name="ImageDivergence"/>
+    <Filter name="ImageExtractComponents" />
+    <Filter name="ImageFFT" />
+    <Filter name="ImageRFFT" />
+    <Filter name="ImageFlip" />
+    <Filter name="ImageFourierCenter"/>
+    <Filter name="ImageGaussianSmooth"/>
     <Filter name="ImageMagnitude" />
+    <Filter name="ImageMathematics"/>
+    <Filter name="ImageNormalize" />
+    <Filter name="ImageResample" />
+    <Filter name="ImageReslice" />
+    <Filter name="ImageShiftScale"/>
+    <Filter name="ImageSobel3D" />
+    <Filter name="ImageStencil" />
+    <Filter name="ImageThreshold" />
   </Category>
   <Category name="PolyData" menu_label="&amp;PolyData">
    <Filter name="TubeFilter"/>
@@ -8,6 +25,7 @@
    <Filter name="SplineFilter"/>
   </Category>
   <Category name="Hybrid" menu_label="&amp;Hybrid">
+    <Filter name="ProbeFilter" />
     <Filter name="StreamTracer" />
     <Filter name="ArbitrarySourceStreamTracer" />
   </Category>
