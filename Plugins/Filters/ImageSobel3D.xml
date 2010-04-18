@@ -18,6 +18,27 @@
                <DataType value="vtkImageData"/>
             </DataTypeDomain>
          </InputProperty>
+       <StringVectorProperty
+          name="SelectInputScalars"
+          command="SetInputArrayToProcess"
+          number_of_elements="5"
+          element_types="0 0 0 0 2"
+          label="Scalars">
+         <ArrayListDomain name="array_list"
+                          attribute_type="Scalars">
+           <RequiredProperties>
+             <Property name="Input" function="Input"/>
+           </RequiredProperties>
+         </ArrayListDomain>
+         <FieldDataDomain name="field_list">
+           <RequiredProperties>
+             <Property name="Input" function="Input"/>
+           </RequiredProperties>
+         </FieldDataDomain>
+         <Documentation>
+           The value of this property contains the name of the scalar array from which to perform thresholding.
+         </Documentation>
+       </StringVectorProperty>
          <IntVectorProperty
                            name="ReleaseDataFlag"
                            command="SetReleaseDataFlag"
