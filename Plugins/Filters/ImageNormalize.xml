@@ -2,7 +2,7 @@
    <ProxyGroup name="filters">
       <SourceProxy name="ImageNormalize"
                    class="vtkImageNormalize"
-                  label="Image Magnitude">
+                  label="Image Normalize">
          <Documentation
                       long_help="" 
                       short_help=""> 
