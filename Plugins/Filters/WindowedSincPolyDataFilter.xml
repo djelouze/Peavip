@@ -1,0 +1,92 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="WindowedSincPolyDataFilter"
+                   class="vtkWindowedSincPolyDataFilter"
+                  label="Windowed Sinc Smooth">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkPolyData"/>
+            </DataTypeDomain>
+         </InputProperty>
+         
+         <IntVectorProperty
+                           name="NumberOfIterations"
+                           command="SetNumberOfIterations"
+                           number_of_elements="1"
+                           default_values="20">
+            
+         </IntVectorProperty>
+         <DoubleVectorProperty
+                           name="PassBand"
+                           command="SetPassBand"
+                           number_of_elements="1"
+                           default_values="0.1">
+         </DoubleVectorProperty>
+          <IntVectorProperty
+                           name="NormalizeCoordinates"
+                           command="SetNormalizeCoordinates"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="bool"/>  
+         </IntVectorProperty>
+           <IntVectorProperty
+                           name="FeatureEdgeSmoothing"
+                           command="SetFeatureEdgeSmoothing"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="bool"/>  
+         </IntVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="FeatureAngle"
+                              command="SetFeatureAngle"
+                              number_of_elements="1"
+                              default_values="0">
+         </DoubleVectorProperty>
+          <DoubleVectorProperty
+                              name="EdgeAngle"
+                              command="SetEdgeAngle"
+                              number_of_elements="1"
+                              default_values="0">
+         </DoubleVectorProperty>
+           <IntVectorProperty
+                           name="BoundarySmoothing"
+                           command="SetBoundarySmoothing"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="bool"/>  
+         </IntVectorProperty>
+           <IntVectorProperty
+                           name="NonManifoldSmoothing"
+                           command="SetNonManifoldSmoothing"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="bool"/>  
+         </IntVectorProperty>
+           <IntVectorProperty
+                           name="GenerateErrorScalars"
+                           command="SetGenerateErrorScalars"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="bool"/>  
+         </IntVectorProperty>
+           <IntVectorProperty
+                           name="GenerateErrorVectors"
+                           command="SetGenerateErrorVectors"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="bool"/>  
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

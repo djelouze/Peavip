@@ -23,6 +23,8 @@
    <Filter name="TubeFilter"/>
    <Filter name="CleanPolyData"/>
    <Filter name="SplineFilter"/>
+   <Filter name="SmoothPolyData"/>
+   <Filter name="WindowedSincPolyDataFilter"/>
   </Category>
   <Category name="Hybrid" menu_label="&amp;Hybrid">
     <Filter name="ProbeFilter" />

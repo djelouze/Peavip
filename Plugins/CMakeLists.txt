@@ -22,6 +22,7 @@ SET( FILTERS_XML
 ./Filters/ProbeFilter.xml
 ./Filters/SplineFilter.xml
 ./Filters/TensorGlyph.xml
+./Filters/WindowedSincPolyDataFilter.xml
 )
 
 # Create target that will contain all the listed VTK filter
