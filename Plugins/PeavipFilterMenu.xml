@@ -3,6 +3,7 @@
     <Filter name="ImageCast" />
     <Filter name="ImageChangeInformation"/>
     <Filter name="ImageDivergence"/>
+    <Filter name="ImageDotProduct" />
     <Filter name="ImageExtractComponents" />
     <Filter name="ImageFFT" />
     <Filter name="ImageRFFT" />
@@ -12,6 +13,7 @@
     <Filter name="ImageMagnitude" />
     <Filter name="ImageMathematics"/>
     <Filter name="ImageNormalize" />
+    <Filter name="ImagePermute" />
     <Filter name="ImageResample" />
     <Filter name="ImageReslice" />
     <Filter name="ImageShiftScale"/>
@@ -27,6 +29,7 @@
    <Filter name="WindowedSincPolyDataFilter"/>
   </Category>
   <Category name="Hybrid" menu_label="&amp;Hybrid">
+    <Filter name="GaussianSplatter" />
     <Filter name="ProbeFilter" />
     <Filter name="StreamTracer" />
     <Filter name="ArbitrarySourceStreamTracer" />

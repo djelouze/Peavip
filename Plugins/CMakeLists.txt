@@ -1,9 +1,11 @@
 
 # List xml description of filters
 SET( FILTERS_XML 
+./Filters/GaussianSplatter.xml
 ./Filters/ImageCast.xml
 ./Filters/ImageChangeInformation.xml
 ./Filters/ImageDivergence.xml
+./Filters/ImageDotProduct.xml
 ./Filters/ImageExtractComponents.xml
 ./Filters/ImageFFT.xml
 ./Filters/ImageFourierCenter.xml
@@ -13,6 +15,7 @@ SET( FILTERS_XML
 ./Filters/ImageMagnitude.xml
 ./Filters/ImageMathematics.xml
 ./Filters/ImageNormalize.xml
+./Filters/ImagePermute.xml
 ./Filters/ImageResample.xml
 ./Filters/ImageReslice.xml
 ./Filters/ImageShiftScale.xml

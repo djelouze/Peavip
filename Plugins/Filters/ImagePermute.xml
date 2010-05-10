@@ -1,0 +1,51 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImagePermute"
+                   class="vtkImagePermute"
+                  label="Image Permute Axis">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+        <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            
+            <Documentation>
+
+            </Documentation>
+         </InputProperty>
+
+         <IntVectorProperty
+                              name="FilteredAxis"
+                              command="SetFilteredAxes"
+                              number_of_elements="3"
+                              default_values="0 1 2"
+                              animateable="0">
+            <Documentation>
+
+            </Documentation>
+         </IntVectorProperty>
+
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+
+   </ProxyGroup>
+</ServerManagerConfiguration>

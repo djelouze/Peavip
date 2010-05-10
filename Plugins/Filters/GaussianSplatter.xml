@@ -1,0 +1,162 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="GaussianSplatter"
+                   class="vtkGaussianSplatter"
+                  label="Gaussian Splatter">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation> 
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkDataSet"/>
+            </DataTypeDomain>
+         </InputProperty>
+         
+         <IntVectorProperty
+                           name="SampleDimensions"
+                           label="Sample Dimensions"
+                           command="SetSampleDimensions"
+                           number_of_elements="3"
+                           default_values="128 128 128" >
+            <Documentation>
+            </Documentation>
+         </IntVectorProperty>
+        <DoubleVectorProperty
+                          name="ModelBounds"
+                          label="Model Bounds"
+                          command="SetModelBounds"
+                          number_of_elements="6"
+                          default_values="0 -1 0 -1 0 -1" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>
+
+        <DoubleVectorProperty
+                          name="Radius"
+                          label="Radius"
+                          command="SetRadius"
+                          number_of_elements="1"
+                          default_values="1" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>
+
+        <DoubleVectorProperty
+                          name="ScaleFactor"
+                          label="Scale Factor"
+                          command="SetScaleFactor"
+                          number_of_elements="1"
+                          default_values="1" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>
+
+        <DoubleVectorProperty
+                  name="ExponentFactor"
+                  label="Exponent Factor"
+                  command="SetExponentFactor"
+                  number_of_elements="1"
+                  default_values="1" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>
+
+        <IntVectorProperty
+                           name="NormalWarping"
+                           command="SetNormalWarping"
+                           number_of_elements="1"
+                           default_values="0">
+          <BooleanDomain name="boolean"/>
+          <Documentation>
+
+          </Documentation>
+        </IntVectorProperty>
+
+        <DoubleVectorProperty
+                  name="Eccentricity"
+                  label="Eccentricity"
+                  command="SetEccentricity"
+                  number_of_elements="1"
+                  default_values="1" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>
+
+        <IntVectorProperty
+                   name="ScalarWarping"
+                   command="SetScalarWarping"
+                   number_of_elements="1"
+                   default_values="0">
+          <BooleanDomain name="boolean"/>
+          <Documentation>
+
+          </Documentation>
+        </IntVectorProperty>
+
+        <IntVectorProperty
+                   name="Capping"
+                   command="SetCapping"
+                   number_of_elements="1"
+                   default_values="0">
+          <BooleanDomain name="boolean"/>
+          <Documentation>
+
+          </Documentation>
+        </IntVectorProperty>
+
+        <DoubleVectorProperty
+                  name="CapValue"
+                  label="Cap Value"
+                  command="SetCapValue"
+                  number_of_elements="1"
+                  default_values="1" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>
+
+        <IntVectorProperty
+                   name="AccumulationMode"
+                   command="SetAccumulationMode"
+                   number_of_elements="1"
+                   default_values="2">
+          <EnumerationDomain name="enum">
+            <Entry value="0" text="Min"/>
+            <Entry value="1" text="Max"/>
+            <Entry value="2" text="Sum"/>
+          </EnumerationDomain>          
+          <Documentation>
+
+          </Documentation>
+        </IntVectorProperty>
+
+        <DoubleVectorProperty
+                  name="NullValue"
+                  label="Null Value"
+                  command="SetNullValue"
+                  number_of_elements="1"
+                  default_values="0" >
+          <Documentation>
+          </Documentation>
+        </DoubleVectorProperty>        
+        
+        <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

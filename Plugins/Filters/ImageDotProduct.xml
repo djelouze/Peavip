@@ -1,0 +1,55 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageDotProduct"
+                   class="vtkImageDotProduct"
+                  label="Image Dot Product">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input1"
+                       command="SetInputConnection"
+                       port_index="0">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            <Documentation>
+              Set the input to the Image DotProduct filter.
+            </Documentation>
+         </InputProperty>
+         <InputProperty
+                       name="Input2"
+                       command="SetInputConnection"
+                       port_index="1"
+                       is_optional="1">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+            <Documentation>
+               Set the input to the Image Mathematics filter.
+            </Documentation>
+         </InputProperty>
+         
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
