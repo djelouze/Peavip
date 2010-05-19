@@ -1,0 +1,56 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageConstantPad"
+                   class="vtkImageConstantPad"
+                  label="Image Padding (Constant)">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation> 
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkDataSet"/>
+            </DataTypeDomain>
+         </InputProperty>
+
+        <IntVectorProperty
+                          name="OutputWholeExtent"
+                           label="OutputWholeExtent"
+                           command="SetOutputWholeExtent"
+                           number_of_elements="6"
+                           default_values="0 1 0 1 0 1" >
+            <Documentation>
+               Choose the component to extract.
+            </Documentation>
+         </IntVectorProperty>
+        <DoubleVectorProperty
+                          name="Constant"
+                           label="Constant"
+                           command="SetConstant"
+                           number_of_elements="1"
+                           animateable="1"
+                           default_values="0" >
+            <Documentation>
+               Choose the components to extract.
+            </Documentation>
+         </DoubleVectorProperty>
+        <IntVectorProperty
+                          name="ReleaseDataFlag"
+                          command="SetReleaseDataFlag"
+                          number_of_elements="1"
+                          default_values="0"
+                          animateable="0">
+           <BooleanDomain name="boolean"/>
+           <Documentation>
+              
+           </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

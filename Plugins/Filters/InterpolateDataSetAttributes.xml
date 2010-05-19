@@ -1,0 +1,36 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="InterpolateDataSetAttributes"
+                   class="vtkInterpolateDataSetAttributes"
+                  label="InterpolateDataSetAttributes">
+         <Documentation
+                      long_help="" 
+                      short_help="">
+         </Documentation> 
+         <InputProperty
+                     name="Input"
+                     command="AddInputConnection"
+                     clean_command="RemoveAllInputs"
+                     multiple_input="1">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkDataSet"/>
+            </DataTypeDomain>
+         </InputProperty>
+
+         <DoubleVectorProperty
+                           name="T"
+                           label="T"
+                           command="SetT"
+                           number_of_elements="1"
+                           default_values="0" >
+            <Documentation>
+            </Documentation>
+            <DoubleRangeDomain name="range" min="0" max="1"/>
+         </DoubleVectorProperty>
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

@@ -4,6 +4,7 @@ SET( FILTERS_XML
 ./Filters/GaussianSplatter.xml
 ./Filters/ImageCast.xml
 ./Filters/ImageChangeInformation.xml
+./Filters/ImageConstantPad.xml
 ./Filters/ImageDivergence.xml
 ./Filters/ImageDotProduct.xml
 ./Filters/ImageExtractComponents.xml
@@ -14,6 +15,7 @@ SET( FILTERS_XML
 ./Filters/ImageGaussianSmooth.xml
 ./Filters/ImageMagnitude.xml
 ./Filters/ImageMathematics.xml
+./Filters/ImageMirrorPad.xml
 ./Filters/ImageNormalize.xml
 ./Filters/ImagePermute.xml
 ./Filters/ImageResample.xml
@@ -22,6 +24,8 @@ SET( FILTERS_XML
 ./Filters/ImageSobel3D.xml
 ./Filters/ImageStencil.xml
 ./Filters/ImageThreshold.xml
+./Filters/ImageWrapPad.xml
+./Filters/InterpolateDataSetAttributes.xml
 ./Filters/ProbeFilter.xml
 ./Filters/SplineFilter.xml
 ./Filters/TensorGlyph.xml

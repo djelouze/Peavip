@@ -20,6 +20,10 @@
     <Filter name="ImageSobel3D" />
     <Filter name="ImageStencil" />
     <Filter name="ImageThreshold" />
+    <Filter name="ImageConstantPad" />
+    <Filter name="ImageWrapPad" />
+    <Filter name="ImageMirrorPad" />
+    <Filter name="InterpolateDataSetAttributes" />
   </Category>
   <Category name="PolyData" menu_label="&amp;PolyData">
    <Filter name="TubeFilter"/>
@@ -27,6 +31,8 @@
    <Filter name="SplineFilter"/>
    <Filter name="SmoothPolyData"/>
    <Filter name="WindowedSincPolyDataFilter"/>
+   <Filter name="InterpolateDataSetAttributes" />
+   <Filter name="WarpFilter" />
   </Category>
   <Category name="Hybrid" menu_label="&amp;Hybrid">
     <Filter name="GaussianSplatter" />
