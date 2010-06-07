@@ -27,6 +27,7 @@ SET( FILTERS_XML
 ./Filters/ImageWrapPad.xml
 ./Filters/InterpolateDataSetAttributes.xml
 ./Filters/ProbeFilter.xml
+./Filters/RuledSurfaceFilter.xml
 ./Filters/SplineFilter.xml
 ./Filters/TensorGlyph.xml
 ./Filters/WindowedSincPolyDataFilter.xml

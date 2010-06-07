@@ -33,6 +33,7 @@
    <Filter name="WindowedSincPolyDataFilter"/>
    <Filter name="InterpolateDataSetAttributes" />
    <Filter name="WarpFilter" />
+   <Filter name="RuledSurfaceFilter" />
   </Category>
   <Category name="Hybrid" menu_label="&amp;Hybrid">
     <Filter name="GaussianSplatter" />

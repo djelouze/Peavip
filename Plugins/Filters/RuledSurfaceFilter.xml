@@ -1,0 +1,82 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="RuledSurfaceFilter"
+                   class="vtkRuledSurfaceFilter"
+                  label="Ruled Surface Filter">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkPolyData"/>
+            </DataTypeDomain>
+         </InputProperty>
+         <DoubleVectorProperty
+                              name="DistanceFactor"
+                              command="SetDistanceFactor"
+                              number_of_elements="1"
+                              default_values="3">
+         </DoubleVectorProperty>         
+         <IntVectorProperty
+                           name="OnRatio"
+                           command="SetOnRatio"
+                           number_of_elements="1"
+                           default_values="0">
+            
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="Offset"
+                           command="SetOffset"
+                           number_of_elements="1"
+                           default_values="0">
+            
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="CloseSurface"
+                           command="SetCloseSurface"
+                           number_of_elements="1"
+                           default_values="1">
+            <BooleanDomain name="boolean"/>            
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="RuledMode"
+                           command="SetRuledMode"
+                           number_of_elements="1"
+                           default_values="1">
+            
+            <EnumerationDomain name="enum">
+               <Entry value="0" text="Resample"/>
+               <Entry value="1" text="PointWalk"/>
+            </EnumerationDomain>
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="Resolution"
+                           command="SetResolution"
+                           number_of_elements="2"
+                           default_values="1 1">
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="PassLines"
+                           command="SetPassLines"
+                           number_of_elements="1"
+                           default_values="0">
+            <BooleanDomain name="boolean"/>            
+         </IntVectorProperty>
+         <IntVectorProperty
+                           name="OrientLoops"
+                           command="SetOrientLoops"
+                           number_of_elements="1"
+                           default_values="0">
+            <BooleanDomain name="boolean"/>            
+         </IntVectorProperty>         
+
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
