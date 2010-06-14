@@ -31,6 +31,11 @@ SET( FILTERS_XML
 ./Filters/SplineFilter.xml
 ./Filters/TensorGlyph.xml
 ./Filters/WindowedSincPolyDataFilter.xml
+./Filters/BoostKruskalMinimumSpanningTree.xml
+./Filters/BoostPrimMinimumSpanningTree.xml
+./Filters/VertexDegree.xml
+./Filters/PruneTreeFilter.xml
+./Filters/GraphToPolyData.xml
 )
 
 # Create target that will contain all the listed VTK filter

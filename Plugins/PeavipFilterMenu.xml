@@ -41,4 +41,11 @@
     <Filter name="StreamTracer" />
     <Filter name="ArbitrarySourceStreamTracer" />
   </Category>
+  <Category name="Graph" menu_label="&amp;Graph">
+     <Filter name="GraphToPolyData" />
+     <Filter name="BoostPrimMinimumSpanningTree" />
+     <Filter name="BoostKruskalMinimumSpanningTree" />
+     <Filter name="PruneTreeFilter" />
+     <Filter name="VertexDegree" />
+  </Category>
 </ParaViewFilters>

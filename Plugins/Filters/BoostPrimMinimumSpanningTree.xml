@@ -1,0 +1,49 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <!-- ================================================================== -->
+    <SourceProxy name="BoostPrimMinimumSpanningTree" 
+                 class="vtkBoostPrimMinimumSpanningTree" 
+                 label="Minimum Spanning Tree (Prim)">
+      <Documentation
+         long_help=""
+         short_help="">
+      </Documentation>
+
+      <InputProperty
+         name="Input"
+         command="SetInputConnection">
+        <ProxyGroupDomain name="groups">
+          <Group name="sources"/>
+          <Group name="filters"/>
+        </ProxyGroupDomain>
+        <DataTypeDomain name="input_type">
+          <DataType value="vtkGraph"/>
+        </DataTypeDomain>
+        <InputArrayDomain name="input_array">
+        </InputArrayDomain>
+        <Documentation>
+          Set the input point set.
+        </Documentation>
+      </InputProperty>
+      <StringVectorProperty
+         name="EdgeArrayName"
+         command="SetEdgeWeightArrayName"
+         number_of_elements="1"
+         label="Weight">
+        <Documentation>
+          The value of this property contains the name of the scalar array from which to perform thresholding.
+        </Documentation>
+      </StringVectorProperty>      
+      <IntVectorProperty
+         name="OriginVertex"
+         command="SetOriginVertex"
+         number_of_elements="1"
+         default_values="0">
+      </IntVectorProperty>
+      
+
+    </SourceProxy>
+    <!-- End BoostPrimMinimumSpanningTree -->
+  </ProxyGroup>
+  <!-- End Filters Group -->
+</ServerManagerConfiguration>

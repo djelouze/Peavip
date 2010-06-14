@@ -1,0 +1,30 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <!-- ================================================================== -->
+    <SourceProxy name="GraphToPolyData" 
+                 class="vtkGraphToPolyData" 
+                 label="Graph to PolyData">
+      <Documentation>
+      </Documentation>
+
+      <InputProperty
+         name="Input"
+         command="AddInputConnection"
+         clean_command="RemoveAllInputs">
+        <ProxyGroupDomain name="groups">
+          <Group name="sources"/>
+          <Group name="filters"/>
+        </ProxyGroupDomain>
+        <DataTypeDomain name="input_type">
+          <DataType value="vtkGraph"/>
+        </DataTypeDomain>
+        <Documentation>
+          Set the input point set.
+        </Documentation>
+      </InputProperty>
+      
+    </SourceProxy>
+    <!-- End OutlierRemoval -->
+  </ProxyGroup>
+  <!-- End Filters Group -->
+</ServerManagerConfiguration>
