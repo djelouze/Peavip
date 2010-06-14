@@ -2,7 +2,7 @@
    <ProxyGroup name="filters">
       <SourceProxy name="InterpolateDataSetAttributes"
                    class="vtkInterpolateDataSetAttributes"
-                  label="InterpolateDataSetAttributes">
+                   label="Interpolate Attributes">
          <Documentation
                       long_help="" 
                       short_help="">
