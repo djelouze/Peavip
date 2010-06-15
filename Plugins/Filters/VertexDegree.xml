@@ -4,7 +4,7 @@
     <SourceProxy name="VertexDegree" 
                  class="vtkVertexDegree" 
                  label="Vertex Degree">
-      <Documentation
+      <Documentation>
       </Documentation>
 
       <InputProperty

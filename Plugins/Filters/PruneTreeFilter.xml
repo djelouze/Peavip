@@ -4,7 +4,7 @@
     <SourceProxy name="PruneTreeFilter" 
                  class="vtkPruneTreeFilter" 
                  label="Prune Tree">
-      <Documentation
+      <Documentation>
       </Documentation>
 
       <InputProperty
