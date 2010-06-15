@@ -16,7 +16,7 @@
           <Group name="filters"/>
         </ProxyGroupDomain>
         <DataTypeDomain name="input_type">
-          <DataType value="vtkTree"/>
+          <DataType value="vtkGraph"/>
         </DataTypeDomain>
         <Documentation>
           Set the input point set.
