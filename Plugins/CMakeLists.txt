@@ -35,6 +35,8 @@ SET( FILTERS_XML
 ./Filters/BoostPrimMinimumSpanningTree.xml
 ./Filters/VertexDegree.xml
 ./Filters/PruneTreeFilter.xml
+./Filters/TreeLevelsFilter.xml
+./Filters/StrahlerMetric.xml
 ./Filters/GraphToPolyData.xml
 )
 

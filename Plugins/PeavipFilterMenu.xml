@@ -47,5 +47,7 @@
      <Filter name="BoostKruskalMinimumSpanningTree" />
      <Filter name="PruneTreeFilter" />
      <Filter name="VertexDegree" />
+     <Filter name="StrahlerMetric"/>
+     <Filter name="TreeLevelsFilter"/>
   </Category>
 </ParaViewFilters>
