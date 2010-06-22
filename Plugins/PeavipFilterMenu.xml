@@ -29,6 +29,8 @@
    <Filter name="TubeFilter"/>
    <Filter name="CleanPolyData"/>
    <Filter name="SplineFilter"/>
+   <Filter name="Stripper"/>
+   <Filter name="TriangleFilter"/>
    <Filter name="SmoothPolyData"/>
    <Filter name="WindowedSincPolyDataFilter"/>
    <Filter name="InterpolateDataSetAttributes" />
