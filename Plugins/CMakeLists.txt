@@ -50,6 +50,7 @@ ADD_PARAVIEW_PLUGIN(
 # List xml descriptions of VTK sources
 SET( SOURCES_XML 
 ./Sources/ImageGaussianSource.xml
+./Sources/ImageEllipsoidSource.xml
 ./Sources/PlatonicSolidSource.xml
 )
 

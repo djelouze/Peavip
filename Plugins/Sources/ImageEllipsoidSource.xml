@@ -1,0 +1,90 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="sources">
+      <SourceProxy name="ImageEllipsoidSource"
+                   class="vtkImageEllipsoidSource"
+                  label="Image Ellipsoid Source">
+         <Documentation>
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+         <IntVectorProperty
+                           name="WholeExtent"
+                           label="WholeExtent"
+                           number_of_elements="6"
+                           command="SetWholeExtent"
+                           default_values="0 127 0 127 0 127" >
+            <Documentation>
+            </Documentation>
+         </IntVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="Center"
+                              label="Center"
+                              number_of_elements="3"
+                              command="SetCenter"
+                              default_values="63 63 63" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="Radius"
+                              label="Radius"
+                              number_of_elements="3"
+                              command="SetRadius"
+                              default_values="10 10 10" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="InValue"
+                              label="InValue"
+                              number_of_elements="1"
+                              command="SetInValue"
+                              default_values="255" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         
+         <DoubleVectorProperty
+                              name="OutValue"
+                              label="OutValue"
+                              number_of_elements="1"
+                              command="SetOutValue"
+                              default_values="0" >
+            <Documentation>
+            </Documentation>
+         </DoubleVectorProperty>
+         <IntVectorProperty name="OutputScalarType"
+                            command="SetOutputScalarType"
+                            number_of_elements="1"
+                            default_values="3">
+            <EnumerationDomain name="enum">
+               <Entry value="10" text="Float"/>
+               <Entry value="11" text="Double"/>
+               <Entry value="6" text="Int"/>
+               <Entry value="7" text="UnsignedInt"/>
+               <Entry value="8" text="Long"/>
+               <Entry value="9" text="UnsignedLong"/>
+               <Entry value="6" text="Short"/>
+               <Entry value="5" text="UnsignedShort"/>
+               <Entry value="3" text="UnsignedChar"/>
+               <Entry value="2" text="Char"/>
+            </EnumerationDomain>
+         </IntVectorProperty>
+
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty> 
+      </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>
