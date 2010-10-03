@@ -24,6 +24,7 @@
     <Filter name="ImageWrapPad" />
     <Filter name="ImageMirrorPad" />
     <Filter name="InterpolateDataSetAttributes" />
+    <Filter name="Gradient" />
   </Category>
   <Category name="PolyData" menu_label="&amp;PolyData">
    <Filter name="TubeFilter"/>
