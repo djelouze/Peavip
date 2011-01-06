@@ -2,6 +2,7 @@
   <Category name="Image" menu_label="&amp;Image">
     <Filter name="ImageCast" />
     <Filter name="ImageChangeInformation"/>
+    <Filter name="ImageCheckerboard"/>
     <Filter name="ImageDivergence"/>
     <Filter name="ImageDotProduct" />
     <Filter name="ImageExtractComponents" />
