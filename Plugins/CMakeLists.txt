@@ -14,6 +14,7 @@ SET( FILTERS_XML
 ./Filters/ImageFlip.xml
 ./Filters/ImageGaussianSmooth.xml
 ./Filters/ImageMagnitude.xml
+./Filters/ImageLuminance.xml
 ./Filters/ImageMathematics.xml
 ./Filters/ImageMirrorPad.xml
 ./Filters/ImageNormalize.xml

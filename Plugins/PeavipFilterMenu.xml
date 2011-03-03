@@ -12,6 +12,7 @@
     <Filter name="ImageFourierCenter"/>
     <Filter name="ImageGaussianSmooth"/>
     <Filter name="ImageMagnitude" />
+    <Filter name="ImageLuminance" />
     <Filter name="ImageMathematics"/>
     <Filter name="ImageNormalize" />
     <Filter name="ImagePermute" />
