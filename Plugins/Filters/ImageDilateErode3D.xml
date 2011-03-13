@@ -1,0 +1,87 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+      <SourceProxy name="ImageDilateErode3D"
+                   class="vtkImageDilateErode3D"
+                  label="Image Dilate Erode">
+         <Documentation
+                      long_help="" 
+                      short_help=""> 
+         </Documentation>
+        <InputProperty
+                       name="Input"
+                       command="SetInputConnection">
+            <ProxyGroupDomain name="groups">
+               <Group name="sources"/>
+               <Group name="filters"/>
+            </ProxyGroupDomain>
+            <DataTypeDomain name="input_type">
+               <DataType value="vtkImageData"/>
+            </DataTypeDomain>
+          <InputArrayDomain name="input_array" attribute_type="point"
+                            number_of_components="1"/>
+            
+            <Documentation>
+
+            </Documentation>
+         </InputProperty>
+       <StringVectorProperty
+          name="SelectInputScalars"
+          command="SetInputArrayToProcess"
+          number_of_elements="5"
+          element_types="0 0 0 0 2"
+          label="Scalars">
+         <ArrayListDomain name="array_list"
+                          attribute_type="Scalars">
+           <RequiredProperties>
+             <Property name="Input" function="Input"/>
+           </RequiredProperties>
+         </ArrayListDomain>
+         <Documentation>
+           The value of this property contains the name of the scalar array from which to perform thresholding.
+         </Documentation>
+       </StringVectorProperty>
+         <IntVectorProperty
+                              name="KernelSize"
+                              command="SetKernelSize"
+                              number_of_elements="3"
+                              default_values="1 1 1"
+                              animateable="0">
+            <Documentation>
+
+            </Documentation>
+         </IntVectorProperty>
+         <DoubleVectorProperty
+                              name="DilateValue"
+                              command="SetDilateValue"
+                              number_of_elements="1"
+                              default_values="0"
+                              animateable="0">
+            <Documentation>
+
+            </Documentation>
+         </DoubleVectorProperty>
+         <DoubleVectorProperty
+                              name="ErodeValue"
+                              command="SetErodeValue"
+                              number_of_elements="1"
+                              default_values="0"
+                              animateable="0">
+            <Documentation>
+
+            </Documentation>
+         </DoubleVectorProperty>
+         <IntVectorProperty
+                           name="ReleaseDataFlag"
+                           command="SetReleaseDataFlag"
+                           number_of_elements="1"
+                           default_values="0"
+                           animateable="0">
+            <BooleanDomain name="boolean"/>
+            <Documentation>
+               
+            </Documentation>
+         </IntVectorProperty>
+      </SourceProxy>
+
+   </ProxyGroup>
+</ServerManagerConfiguration>

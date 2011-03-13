@@ -3,6 +3,7 @@
     <Filter name="ImageCast" />
     <Filter name="ImageChangeInformation"/>
     <Filter name="ImageCheckerboard"/>
+    <Filter name="ImageDilateErode3D"/>
     <Filter name="ImageDivergence"/>
     <Filter name="ImageDotProduct" />
     <Filter name="ImageExtractComponents" />

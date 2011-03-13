@@ -5,6 +5,7 @@ SET( FILTERS_XML
 ./Filters/ImageCast.xml
 ./Filters/ImageChangeInformation.xml
 ./Filters/ImageConstantPad.xml
+./Filters/ImageDilateErode3D.xml
 ./Filters/ImageDivergence.xml
 ./Filters/ImageDotProduct.xml
 ./Filters/ImageExtractComponents.xml
