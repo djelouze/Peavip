@@ -4,6 +4,7 @@ SET( FILTERS_XML
 ./Filters/GaussianSplatter.xml
 ./Filters/ImageCast.xml
 ./Filters/ImageChangeInformation.xml
+./Filters/ImageCheckerboard.xml
 ./Filters/ImageConstantPad.xml
 ./Filters/ImageDilateErode3D.xml
 ./Filters/ImageDivergence.xml
