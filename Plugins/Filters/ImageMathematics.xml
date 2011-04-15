@@ -43,7 +43,7 @@
                            name="Operation"
                            command="SetOperation"
                            number_of_elements="1"
-                           default_values="0">
+                           default_values="5">
             
             <EnumerationDomain name="enum">
                <Entry value="0" text="Add"/>
