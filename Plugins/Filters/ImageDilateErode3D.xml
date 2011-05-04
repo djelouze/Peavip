@@ -78,7 +78,7 @@
                            animateable="0">
             <BooleanDomain name="boolean"/>
             <Documentation>
-               
+		  Turn release data flag on or off for all output ports.               
             </Documentation>
          </IntVectorProperty>
       </SourceProxy>

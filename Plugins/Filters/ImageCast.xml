@@ -1,64 +1,78 @@
 <ServerManagerConfiguration>
-   <ProxyGroup name="filters">
-      <SourceProxy name="ImageCast"
-                   class="vtkImageCast"
-                  label="Image Cast">
-         <Documentation
-                      long_help="" 
-                      short_help=""> 
-         </Documentation>
-         <InputProperty
-                       name="Input"
-                       command="SetInputConnection">
-            <ProxyGroupDomain name="groups">
-               <Group name="sources"/>
-               <Group name="filters"/>
-            </ProxyGroupDomain>
-            <DataTypeDomain name="input_type">
-               <DataType value="vtkImageData"/>
-            </DataTypeDomain>
-            <Documentation>
-               Set the input to the Image Cast filter.
-            </Documentation>
-         </InputProperty>
-         
-         <IntVectorProperty
-                           name="OutputScalarType"
-                           command="SetOutputScalarType"
-                           number_of_elements="1"
-                           default_values="7">
-            <EnumerationDomain name="enum">
-               <Entry value="10" text="Float"/>
-               <Entry value="11" text="Double"/>
-               <Entry value="6" text="Int"/>
-               <Entry value="7" text="UnsignedInt"/>
-               <Entry value="8" text="Long"/>
-               <Entry value="9" text="UnsignedLong"/>
-               <Entry value="6" text="Short"/>
-               <Entry value="5" text="UnsignedShort"/>
-               <Entry value="3" text="UnsignedChar"/>
-               <Entry value="2" text="Char"/>
-            </EnumerationDomain>
-         </IntVectorProperty>
-         
-         <IntVectorProperty
-                           name="ClampOverflow"
-                           command="SetClampOverflow"
-                           number_of_elements="1"
-                           default_values="1">
-            <BooleanDomain name="boolean"/>
-         </IntVectorProperty>
-         <IntVectorProperty
-                           name="ReleaseDataFlag"
-                           command="SetReleaseDataFlag"
-                           number_of_elements="1"
-                           default_values="0"
-                           animateable="0">
-            <BooleanDomain name="boolean"/>
-            <Documentation>
-               
-            </Documentation>
-         </IntVectorProperty>
-      </SourceProxy>
-   </ProxyGroup> 
-</ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="ImageCast"
+    class="vtkImageCast"
+      label="Image Cast">
+      <Documentation
+      long_help="vtkImageCast filter casts the input type to
+      match the output type in the image processing pipeline. The filter does nothing
+      if the input already has the correct type. To specify the CastTo type, use
+      SetOutputScalarType method.
+      Warning: As vtkImageCast only casts values without rescaling them, its use is
+      not recommented. vtkImageShiftScale is the recommented way to change the type of
+      an image data." 
+	short_help="Image Data type Casting Filter"> 
+      </Documentation>
+      <InputProperty
+      name="Input"
+	command="SetInputConnection">
+	  <ProxyGroupDomain name="groups">
+	    <Group name="sources"/>
+	    <Group name="filters"/>
+	  </ProxyGroupDomain>
+	  <DataTypeDomain name="input_type">
+	    <DataType value="vtkImageData"/>
+	  </DataTypeDomain>
+	  <Documentation>
+	    Set the input to the Image Cast filter.
+	  </Documentation>
+	</InputProperty>
+	
+	<IntVectorProperty
+	name="OutputScalarType"
+	command="SetOutputScalarType"
+	number_of_elements="1"
+	  default_values="7">
+	    <EnumerationDomain name="enum">
+	      <Entry value="10" text="Float"/>
+	      <Entry value="11" text="Double"/>
+	      <Entry value="6" text="Int"/>
+	      <Entry value="7" text="UnsignedInt"/>
+	      <Entry value="8" text="Long"/>
+	      <Entry value="9" text="UnsignedLong"/>
+	      <Entry value="6" text="Short"/>
+	      <Entry value="5" text="UnsignedShort"/>
+	      <Entry value="3" text="UnsignedChar"/>
+	      <Entry value="2" text="Char"/>
+	    </EnumerationDomain>
+	    <Documentation>
+	      Set the desired output scalar type to cast to. 
+	    </Documentation>
+	  </IntVectorProperty>
+	  <IntVectorProperty
+	  name="ClampOverflow"
+	  command="SetClampOverflow"
+	  number_of_elements="1"
+	    default_values="1">
+	      <BooleanDomain name="boolean"/>
+	      <Documentation>
+		When the ClampOverflow flag is on, the data is thresholded so that the output
+		value does not exceed the max or min of the data type. By default ClampOverflow
+		is off. 
+	      </Documentation>
+	    </IntVectorProperty>
+	    <IntVectorProperty
+	    name="ReleaseDataFlag"
+	    command="SetReleaseDataFlag"
+	    number_of_elements="1"
+	    default_values="0"
+	      animateable="0">
+		<BooleanDomain name="boolean"/>
+		<Documentation>
+		  Turn release data flag on or off for all output ports.
+		</Documentation>
+	      </IntVectorProperty>
+	    </SourceProxy>
+	  </ProxyGroup> 
+	</ServerManagerConfiguration>
+	

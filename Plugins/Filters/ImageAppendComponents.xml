@@ -24,7 +24,17 @@ The Append Attributes filter takes multiple input data sets with the same geomet
              This property specifies the input to the Append Components filter.
            </Documentation>
       </InputProperty>
-
+	    <IntVectorProperty
+	    name="ReleaseDataFlag"
+	    command="SetReleaseDataFlag"
+	    number_of_elements="1"
+	    default_values="0"
+	      animateable="0">
+		<BooleanDomain name="boolean"/>
+		<Documentation>
+		  Turn release data flag on or off for all output ports.
+		</Documentation>
+	      </IntVectorProperty>
    <!-- End AppendAttributes -->
    </SourceProxy>
    </ProxyGroup> 
