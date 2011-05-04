@@ -1,0 +1,31 @@
+<ServerManagerConfiguration>
+   <ProxyGroup name="filters">
+   <!-- ==================================================================== -->
+   <SourceProxy name="ImageAppendComponents" class="vtkImageAppendComponents"
+    label="Append Attributes">
+      <Documentation
+         long_help="vtkImageAppendComponents takes the components from two inputs and merges them into one output. If Input1 has M components, and Input2 has N components, the output will have M+N components with input1 components coming first.."
+         short_help="Collects components from two inputs into one output.">
+The Append Attributes filter takes multiple input data sets with the same geometry and merges their point and cell attributes to produce a single output containing all the point and cell attributes of the inputs. Any inputs without the same number of points and cells as the first input are ignored. The input data sets must already be collected together, either as a result of a reader that loads multiple parts (e.g., EnSight reader) or because the Group Parts filter has been run to form a collection of data sets.
+      </Documentation>
+      <InputProperty
+         name="Input"
+         command="AddInputConnection"
+         clean_command="RemoveAllInputs"
+         multiple_input="1">
+           <ProxyGroupDomain name="groups">
+             <Group name="sources"/>
+             <Group name="filters"/>
+           </ProxyGroupDomain>
+           <DataTypeDomain name="input_type" composite_data_supported="0">
+             <DataType value="vtkDataSet"/>
+           </DataTypeDomain>
+           <Documentation>
+             This property specifies the input to the Append Components filter.
+           </Documentation>
+      </InputProperty>
+
+   <!-- End AppendAttributes -->
+   </SourceProxy>
+   </ProxyGroup> 
+</ServerManagerConfiguration>

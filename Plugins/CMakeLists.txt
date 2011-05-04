@@ -2,6 +2,7 @@
 # List xml description of filters
 SET( FILTERS_XML 
 ./Filters/GaussianSplatter.xml
+./Filters/ImageAppendComponents.xml
 ./Filters/ImageCast.xml
 ./Filters/ImageChangeInformation.xml
 ./Filters/ImageCheckerboard.xml

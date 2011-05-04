@@ -1,5 +1,6 @@
 <ParaViewFilters>
   <Category name="Image" menu_label="&amp;Image">
+    <Filter name="ImageAppendComponents" />
     <Filter name="ImageCast" />
     <Filter name="ImageChangeInformation"/>
     <Filter name="ImageCheckerboard"/>
