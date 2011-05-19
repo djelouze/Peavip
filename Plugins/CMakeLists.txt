@@ -3,6 +3,7 @@
 SET( FILTERS_XML 
 ./Filters/GaussianSplatter.xml
 ./Filters/ImageAppendComponents.xml
+./Filters/ImageBlend.xml
 ./Filters/ImageCast.xml
 ./Filters/ImageChangeInformation.xml
 ./Filters/ImageCheckerboard.xml
