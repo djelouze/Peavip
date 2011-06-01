@@ -24,6 +24,7 @@
                                number_of_elements="1"
                                default_values="1"
                                >
+            <DoubleRangeDomain name="range" min="0"/>
          </DoubleVectorProperty>
          <DoubleVectorProperty 
                                name="RadiusFactor"
@@ -31,6 +32,7 @@
                                number_of_elements="1"
                                default_values="1"
                                >
+            <DoubleRangeDomain name="range" min="0"/>
          </DoubleVectorProperty>
          <IntVectorProperty 
                             name="Dimensionality"
