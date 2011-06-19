@@ -46,6 +46,7 @@
   <Category name="Hybrid" menu_label="&amp;Hybrid">
     <Filter name="GaussianSplatter" />
     <Filter name="ProbeFilter" />
+    <Filter name="ProbePolyhedron" />
     <Filter name="StreamTracer" />
     <Filter name="ArbitrarySourceStreamTracer" />
   </Category>
