@@ -1,0 +1,2 @@
+SetDisplayProperties(BlendMode="MaximumIntensity")
+Render()
